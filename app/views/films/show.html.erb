@@ -1,1 +1,7 @@
 <h1><%= @film.title %></h1>
+
+<%= image_tag @film.gif %>
+
+<p><%= @film.description %></p>
+
+<%= link_to "trailer", @film.trailer %>
