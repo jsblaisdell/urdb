@@ -1,0 +1,8 @@
+<h1>URDb</h1>
+<ul>
+    <% @films.each do |film| %>
+        <% id = film.id %>
+        <% title = film.title %>
+        <li><%= title %></li>
+    <% end %>
+</ul>

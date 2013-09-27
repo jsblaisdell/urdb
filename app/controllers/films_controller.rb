@@ -1,5 +1,6 @@
 class FilmsController < ApplicationController
-  def show_all
+  def index
+    @films = Film.all
   end
 
   def show

@@ -1,5 +1,6 @@
 Urdb::Application.routes.draw do
-  root "films#show_all"
+  root "films#index"
 
-  get "/films" => "films#show_all"
+  get "/films" => "films#index", as: "films"
 end
+# index, show, new, create, edit, update
