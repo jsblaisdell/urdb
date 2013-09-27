@@ -3,6 +3,6 @@
     <% @films.each do |film| %>
         <% id = film.id %>
         <% title = film.title %>
-        <li><%= title %></li>
+        <li><%= link_to title, film_path(id) %></li>
     <% end %>
 </ul>
